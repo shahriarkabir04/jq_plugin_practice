@@ -1,2 +1,2 @@
-# jquery-plugin-2
-There are 10 types of plugin I have used to do. website link : https://aminurjibon0.github.io/jquery-plugin-2/
+# jquery_plugin_practice
+<a href="https://shahriarkabir04.github.io/jq_plugin_practice/"><h1>Click Here</h1></a>
