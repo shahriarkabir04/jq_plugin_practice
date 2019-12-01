@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- plugin styles start -->
+  <link rel="stylesheet" href="css/tiltedpage-scroll.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <!-- plugin styles end -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+
+  <div class="animsition">
+    <div class="margin" style="min-height: 50px;"></div>
+    <div id="header" class="bg-dark fixed-top w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <a href="#" class="navbar-brand">JQuery Plugin</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav text-uppercase font-weight-bold ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="isotope.html" class="nav-link">Isotope</a></li>
+              <li class="nav-item active"><a href="tilted-page.html" class="nav-link">Tilted Page</a></li>
+              <li class="nav-item"><a href="owl_carousel.html" class="nav-link">Owl Carousel</a></li>
+              <li class="nav-item"><a href="wow.html" class="nav-link">Wow Js</a></li>
+              <li class="nav-item"><a href="sketch.html" class="nav-link">Sketch</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- tiled page start -->
+    <div class="main">
+      <section id="tiled1" class="page1">
+        <div class="container">
+          <img src="images/abandoned-forest-hd-wallpaper-34950.jpg" style="width: 100%;" alt="">
+        </div>
+      </section>
+      <section id="tiled2" class="page2">
+        <div class="container">
+          <img src="images/animal-animal-photography-blur-145939.jpg" alt="">
+        </div>
+      </section>
+      <section id="tiled3" class="page3">
+        <div class="container">
+          <img src="images/art-ball-blur-235615.jpg" alt="">
+        </div>
+      </section>
+      <section id="tiled4" class="page4">
+        <div class="container">
+          <img src="images/beautiful-blur-bright-326055.jpg" alt="">
+        </div>
+      </section>
+      <section id="tiled5" class="last-page">
+        <div class="container">
+          <img src="images/bench-carved-stones-cemetery-257360.jpg" alt="">
+        </div>
+      </section>
+    </div>
+    <!-- tiled page end -->
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+
+  <!-- jquery plugins -->
+  <script src="js/jquery.tiltedpage-scroll.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- activation code -->
+  <script>
+    $(".main").tiltedpage_scroll({
+      sectionContainer: "> section", // In case you don't want to use <section> tag, you can define your won CSS selector here
+      angle: 50, // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+      opacity: true, // You can toggle the opacity effect with this option. The default value is true
+      scale: true, // You can toggle the scaling effect here as well. The default value is true.
+      outAnimation: true // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+    });
+    $(document).ready(function() {
+      $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: ['animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay: false,
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'body',
+        transition: function(url) {
+          window.location.href = url;
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

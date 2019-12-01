@@ -1,0 +1,193 @@
+#counterUp {
+  background-color: #296063;
+  color: #fff;
+  padding: 30px 0;
+}
+#counterUp .single {
+  text-align: center;
+}
+
+/* curve text start */
+ #text1
+ {
+     margin:           3.0em 0.0em;
+     overflow:         hidden;
+     font:             normal normal normal 2.0em/1.5 'Open Sans Light', sans-serif;
+     color:            #ffffff;
+     background-color: #0dccea;
+ }
+ 
+/* curve text end */
+/* tiled start */
+#tiled1 {
+  min-height: 100vh;
+}
+#tiled2 {
+  min-height: 100vh;
+}
+#tiled3 {
+  min-height: 100vh;
+}
+#tiled4 {
+  min-height: 100vh;
+}
+#tiled5 {
+  min-height: 100vh;
+}
+section img {
+  width: 100%;
+}
+/* tiled end */
+
+
+.slider-item {
+  background-color: #3fafee;
+  border: 5px solid #fff;
+}
+
+
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url(../images/demo4.jpg) no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
+/*isotop start*/
+
+/* ---- button ---- */
+
+.button {
+  padding: 6px 8px;
+  border: 0;
+  background-color: #28a745;
+  color: #fff;
+  margin: 20px 0;
+  transition: 0.5s;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #ddd;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+  color: #222;
+}
+
+.button:active,
+.button.is-checked {
+  background-color: #176128;
+}
+
+.button.is-checked {
+  color: white;
+  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
+}
+
+.button:active {
+  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
+}
+
+/* ---- button-group ---- */
+
+
+.grid {
+  border: 1px solid #333;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item {
+  position: relative;
+  float: left;
+  width: 200px;
+  margin: 5px;
+}
+
+.element-item > * {
+  margin: 0;
+  padding: 0;
+}
+
+.element-item .name {
+  position: absolute;
+
+  left: 10px;
+  top: 60px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.element-item .symbol {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  font-size: 42px;
+  font-weight: bold;
+  color: white;
+}
+
+.element-item .number {
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+
+.element-item .weight {
+  position: absolute;
+  left: 10px;
+  top: 76px;
+  font-size: 12px;
+}
+
+.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
+.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
+.element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
+.element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
+.element-item.metalloid       { background: #08F; background: hsl( 216, 100%, 50%); }
+.element-item.diatomic        { background: #00F; background: hsl( 252, 100%, 50%); }
+.element-item.halogen         { background: #F0F; background: hsl( 288, 100%, 50%); }
+.element-item.noble-gas       { background: #F08; background: hsl( 324, 100%, 50%); }
+/*isotop end*/
+
+/*Smooth-box*/
+.smooth-box{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.s-box{
+  margin-top: 20px;
+  width: 200px;
+  height: 120px;
+}
+.smooth-box h1{
+  background-color: green;
+  color: white;
+  display: inline;
+}
+/*Sketch*/
+.sketch{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #29a727c7;
+}
+.sketch h1{
+  font-size: 36px;
+  color: white;
+  /*display: inline-block;*/
+}

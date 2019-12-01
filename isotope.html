@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- plugin styles start -->
+  <link rel="stylesheet" href="css/smoothbox.css">
+  <link rel="stylesheet" href="css/animsition.min.css">
+  <link rel="stylesheet" href="css/roundslider.min.css">
+  <!-- plugin styles end -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="margin" style="min-height: 50px;"></div>
+  <div class="animsition">
+    <div id="header" class="bg-success fixed-top w-100">
+      <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+          <a href="#" class="navbar-brand">JQuery Plugin</a>
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav text-uppercase font-weight-bold ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item active"><a href="isotope.html" class="nav-link">Isotope</a></li>
+              <li class="nav-item"><a href="tilted-page.html" class="nav-link">Tilted Page</a></li>
+              <li class="nav-item"><a href="owl_carousel.html" class="nav-link">Owl Carousel</a></li>
+              <li class="nav-item"><a href="wow.html" class="nav-link">Wow Js</a></li>
+              <li class="nav-item"><a href="sketch.html" class="nav-link">Sketch</a></li>
+              
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            
+            
+            <div class="button-group filters-button-group text-center">
+              <button class="button is-checked" data-filter="*">Show All</button>
+              <button class="button" data-filter=".metal">Nature</button>
+              <button class="button" data-filter=".transition">Nature 1</button>
+              <button class="button" data-filter=".alkali, .alkaline-earth">Nature 2</button>
+              <button class="button" data-filter=":not(.transition)">Nature 3</button>
+            </div>
+
+          <div class="grid">
+              <div class="element-item transition metal " data-category="transition">
+                <img src="images/demo1.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item metalloid " data-category="metalloid">
+                <img src="images/demo2.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item post-transition metal " data-category="post-transition">
+                <img src="images/demo3.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item post-transition metal " data-category="post-transition">
+                <img src="images/demo4.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item transition metal " data-category="transition">
+                <img src="images/art-ball-blur-235615.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item alkali metal " data-category="alkali">
+                <img src="images/demo1.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item alkali metal " data-category="alkali">
+                <img src="images/demo3.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item transition metal " data-category="transition">
+                <img src="images/demo4.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
+                <img src="images/beautiful-blur-bright-326055.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item transition metal " data-category="transition">
+                <img src="images/demo1.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item post-transition metal " data-category="post-transition">
+                <img src="images/demo2.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item metalloid " data-category="metalloid">
+                <img src="images/animal-animal-photography-blur-145939.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item transition metal " data-category="transition">
+                <img src="images/abandoned-forest-hd-wallpaper-34950.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item lanthanoid metal inner-transition " data-category="lanthanoid">
+                <img src="images/demo4.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item noble-gas nonmetal " data-category="noble-gas">
+                <img src="images/demo1.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item diatomic nonmetal " data-category="diatomic">
+                <img src="images/demo2.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+                <img src="images/demo3.jpg" class="w-100" alt="">
+              </div>
+              <div class="element-item actinoid metal inner-transition " data-category="actinoid">
+                <img src="images/demo4.jpg" class="w-100" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Smooth_box -->
+    <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="smooth-box text-center">
+          <h1>Smooth-Box</h1><br>
+        <a class="sb" href="images/1.jpg"><img src="images/1.jpg" class="s-box" alt=""></a>
+        <a class="sb" href="images/2.jpg"><img src="images/2.jpg" class="s-box" alt=""></a>
+        <a class="sb" href="images/3.jpg"><img src="images/3.jpg" class="s-box" alt=""></a>
+        <a class="sb" href="images/4.jpg"><img src="images/4.jpg" class="s-box" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <!-- <script src="js/jquery.min.js"></script> -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js"></script>
+
+  <!-- jquery plugins -->
+  <script src="js/animsition.min.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  <script src="js/roundslider.min.js"></script>
+  <script src="js/smoothbox.min.js"></script>
+
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- activation code -->
+  <script>
+      $(".animsition").animsition({
+        inClass: 'fade-in',
+        outClass: 'fade-out',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: ['animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay: false,
+        overlayClass: 'animsition-overlay-slide',
+        overlayParentElement: 'body',
+        transition: function(url) {
+          window.location.href = url;
+        }
+      });
+    $(document).ready(function() {
+      // init Isotope
+      var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows'
+      });
+      // filter functions
+      var filterFns = {
+        // show if number is greater than 50
+        numberGreaterThan50: function() {
+          var number = $(this).find('.number').text();
+          return parseInt( number, 10 ) > 50;
+        },
+        // show if name ends with -ium
+        ium: function() {
+          var name = $(this).find('.name').text();
+          return name.match( /ium$/ );
+        }
+      };
+      // bind filter button click
+      $('.filters-button-group').on( 'click', 'button', function() {
+        var filterValue = $( this ).attr('data-filter');
+        // use filterFn if matches value
+        filterValue = filterFns[ filterValue ] || filterValue;
+        $grid.isotope({ filter: filterValue });
+      });
+      // change is-checked class on buttons
+      $('.button-group').each( function( i, buttonGroup ) {
+        var $buttonGroup = $( buttonGroup );
+        $buttonGroup.on( 'click', 'button', function() {
+          $buttonGroup.find('.is-checked').removeClass('is-checked');
+          $( this ).addClass('is-checked');
+        });
+      });
+    });
+    $("#slider").roundSlider({
+      radius: 85,
+      sliderType: "default",
+      value: 80
+    });
+    $("#slider2").roundSlider({
+      radius: 80,
+      width: 8,
+      handleSize: "+16",
+      handleShape: "dot",
+      sliderType: "min-range",
+      value: 65
+  });
+  </script>
+</body>
+
+</html>
